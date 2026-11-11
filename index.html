@@ -37,24 +37,34 @@
 
     </section>
 
-    <!-- Dashboard Section -->
-    <section id="dashboard">
+    
+<!-- Dashboard Section -->
+<section id="dashboard">
+    <div class="dashboard-header">
+        <h1>Smart Recycling Bin Dashboard</h1>
+        <p>
+            Welcome to the Smart Recycling Bin Dashboard.
+            Here you can monitor the status of your smart recycling bin.
+        </p>
+    </div>
 
-        <div class="dashboard-header">
-            <h1>Smart Recycling Bin Dashboard</h1>
-            <p>
-                Welcome to the Smart Recycling Bin Dashboard.
-                Here you can monitor the status of your smart recycling bin.
-            </p>
-        </div>
+    <div class="status-card">
+        <h2>Device Status</h2>
 
-        <div class="status-card">
-            <h2>Device Status</h2>
-            <p>ESP32 Status: <span class="status">Not Connected</span></p>
-            <button>Check Status</button>
-        </div>
+        <p>
+            ESP32 Status:
+            <span class="status" id="esp32Status">
+                Not Connected
+            </span>
+        </p>
 
-    </section>
+        <button id="checkStatusBtn">
+            Check Status
+        </button>
+
+        <p id="statusMessage"></p>
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="about">
@@ -100,6 +110,7 @@
     <footer>
         <p>Smart Recycling Bin | A Better Future Starts With Us</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
+ 
